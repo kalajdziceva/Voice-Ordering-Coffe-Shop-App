@@ -1,0 +1,25 @@
+#:kivy 1.0.9
+
+<Root>:
+
+    orientation: 'horizontal'
+    cols: 2
+    rows: 2
+    row_force_default: True
+    row_default_height: 40
+
+    RecordButton:
+        id: record_button
+        background_color: 1,1.01,0.90,1
+        text: 'Order'
+        on_release: 
+            self.record()
+        size_hint_x: None
+        width:100
+
+
+    TextInput:
+        text: record_button.output
+        readonly: True
+
+        
